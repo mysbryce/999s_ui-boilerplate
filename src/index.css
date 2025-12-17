@@ -29,3 +29,19 @@ input::-webkit-inner-spin-button {
 input[type='number'] {
   -moz-appearance: textfield; /* Firefox */
 }
+
+.show-scroll::-webkit-scrollbar {
+  display: unset;
+  height: 4px;
+  width: 4px;
+}
+
+.show-scroll::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+
+.show-scroll::-webkit-scrollbar-thumb {
+  @apply bg-grand-400;
+  border-radius: 3px;
+}
